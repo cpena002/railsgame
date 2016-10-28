@@ -1,0 +1,12 @@
+<h1>Games</h1>
+Hey <%= @user.name%>. (<%= @user.email%>)
+<hr />
+
+Result: <%= @result %>
+
+<hr>
+
+<form action='/games/play' method="post">
+  <input type="number" name="user_guess" required />
+  <input type="submit" name="Play" />
+</form>
